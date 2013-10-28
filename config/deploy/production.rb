@@ -1,7 +1,7 @@
 set :stage, :production
 #set :rails_env, :production
 
-server '172.16.29.39', user: 'deploy', roles: %w{web app}
+server '172.16.29.39', user: 'deploy', roles: %w{web app}, ssh_options: {forward_agent: true}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options

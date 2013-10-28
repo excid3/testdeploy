@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/capistrano/bundler.git
+  revision: 8c40862ef53de8d7706682f452f6ba76502864ad
+  specs:
+    capistrano-bundler (1.0.0)
+      capistrano (>= 3.0.0.pre)
+
+GIT
   remote: git://github.com/capistrano/rbenv.git
   revision: 68fce771ca41ac6882f9a86e3660151f0a518ced
   specs:
@@ -39,8 +46,6 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 0.0.23)
-    capistrano-bundler (1.0.0)
-      capistrano (>= 3.0.0.pre)
     capistrano-rails (1.0.0)
       capistrano
     coffee-rails (4.0.1)
@@ -134,7 +139,7 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano (~> 3.0.0)
-  capistrano-bundler (~> 1.0.0)
+  capistrano-bundler!
   capistrano-rails (~> 1.0.0)
   capistrano-rbenv!
   coffee-rails (~> 4.0.0)
